@@ -124,6 +124,17 @@ button {
 }
 
 /* Highlighter stroke — the site's signature mark */
+/* Inline code inside notes text */
+.inline-code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  padding: 0.05em 0.3em;
+  background: var(--cobalt-tint);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
 .mark {
   background: linear-gradient(var(--marker), var(--marker));
   background-size: 100% 0.8em;

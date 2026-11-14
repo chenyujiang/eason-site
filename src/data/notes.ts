@@ -1,6 +1,6 @@
 /**
  * Content model shared by the study-notes pages. Text fields accept
- * `==phrase==` for a highlighter mark.
+ * `==phrase==` for a highlighter mark and backticks for inline code.
  */
 export type Block =
   | { kind: 'p'; text: string }
@@ -9,6 +9,7 @@ export type Block =
   | { kind: 'defs'; items: { term: string; text: string }[] }
   | { kind: 'table'; caption: string; head: string[]; rows: string[][] }
   | { kind: 'callout'; label: string; text: string }
+  | { kind: 'code'; label: string; code: string }
 
 export interface NoteSection {
   id: string

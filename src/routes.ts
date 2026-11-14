@@ -2,6 +2,7 @@ export const routes = [
   { path: '/', label: 'Profile', short: 'Profile' },
   { path: '/system-design', label: 'System Design', short: 'System' },
   { path: '/frontend-system-design', label: 'Frontend System Design', short: 'Frontend' },
+  { path: '/api-design', label: 'API Design', short: 'API' },
   { path: '/ai-workflow', label: 'AI Workflow', short: 'AI' },
 ] as const
 

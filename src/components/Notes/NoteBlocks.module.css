@@ -160,3 +160,31 @@
   text-transform: uppercase;
   color: var(--ink);
 }
+
+/* Request / code samples: a mono slip on the sheet */
+.code {
+  margin: 0;
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+}
+
+.codeLabel {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: var(--step-caption);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--cobalt);
+}
+
+.code pre {
+  margin: 0;
+  padding: var(--space-3);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: var(--step-small);
+  line-height: 1.6;
+  color: var(--ink);
+}

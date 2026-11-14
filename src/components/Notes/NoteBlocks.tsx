@@ -76,6 +76,15 @@ function NoteBlock({ block }: { block: Block }) {
           </p>
         </aside>
       )
+    case 'code':
+      return (
+        <figure className={styles.code}>
+          <figcaption className={styles.codeLabel}>{block.label}</figcaption>
+          <pre tabIndex={0}>
+            <code>{block.code}</code>
+          </pre>
+        </figure>
+      )
   }
 }
 
