@@ -15,12 +15,14 @@ function lazyPage<P>(load: () => Promise<{ default: ComponentType<P> }>) {
 
 const SystemDesignPage = lazyPage(() => import('./pages/SystemDesignPage'))
 const FrontendDesignPage = lazyPage(() => import('./pages/FrontendDesignPage'))
+const ApiDesignPage = lazyPage(() => import('./pages/ApiDesignPage'))
 const AiWorkflowPage = lazyPage(() => import('./pages/AiWorkflowPage'))
 
 const TITLES = {
   '/': 'Eason Chen — Senior Frontend Developer',
   '/system-design': 'System Design: Scale from Zero to Millions — Eason Chen',
   '/frontend-system-design': 'Frontend System Design — Eason Chen',
+  '/api-design': 'API Design: REST, GraphQL, Auth and Security — Eason Chen',
   '/ai-workflow': 'AI Workflow — Eason Chen',
 } as const
 
@@ -55,6 +57,9 @@ function App() {
           )}
           {path === '/frontend-system-design' && (
             <FrontendDesignPage section={section} reducedMotion={reducedMotion} />
+          )}
+          {path === '/api-design' && (
+            <ApiDesignPage section={section} reducedMotion={reducedMotion} />
           )}
           {path === '/ai-workflow' && (
             <AiWorkflowPage section={section} reducedMotion={reducedMotion} />
