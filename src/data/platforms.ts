@@ -40,7 +40,7 @@ export const platforms: Platform[] = [
   },
   {
     id: 'acumen-delivery',
-    when: 'Now',
+    when: '2026',
     name: 'Internal delivery platform',
     context: 'Acumen Online — the agency’s own operations tool',
     stack: 'Next.js · React · TypeScript · Tailwind CSS',
@@ -50,6 +50,5 @@ export const platforms: Platform[] = [
       'Resourcing',
       'Time tracking',
     ],
-    status: 'In active development',
   },
 ]

@@ -11,7 +11,7 @@ export const profile = {
   },
   /** `==text==` renders as a highlighter mark. */
   summary: [
-    'Senior frontend developer with ==10+ years of New Zealand experience== delivering e-commerce and enterprise web applications. As the sole senior frontend engineer, I own frontend and technical architecture end-to-end — setting coding standards and making technology decisions. I’ve built platform-scale systems from the ground up: a custom ERP, CRM, and e-commerce platform running seven retail stores and several hundred reseller agents, and a multi-tenant SaaS storefront product.',
+    'Senior frontend developer with ==10+ years of New Zealand experience== delivering e-commerce and enterprise web applications. As the sole senior frontend engineer, I own frontend and technical architecture end-to-end — setting coding standards and making technology decisions. I’ve built platform-scale systems from the ground up: a custom ERP, CRM, and e-commerce platform running seven retail stores and several hundred reseller agents, a multi-tenant SaaS storefront product, and the agency’s internal delivery platform.',
     'I work across the full stack — Node.js and PHP backends, MSSQL and MySQL databases, Azure and AWS deployment — and use AI to deliver outside the core stack fast, from Business Central AL extensions and Power Platform solutions to a React Native app.',
     'I treat AI-assisted development as a ==disciplined engineering process==, not ad-hoc prompting: a spec-driven Claude Code workflow where every change starts from a written spec, is built test-first in small tasks, and is reviewed against both the coding standards and the spec.',
   ],
