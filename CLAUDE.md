@@ -8,25 +8,6 @@ This file gives Claude Code context about the project.
 - One-line description: Eason Chen's personal site — a light "annotated drafting sheet" theme (grid paper, navy ink, cobalt accent, yellow highlighter marks). A profile page built from his resume (with a side rail for its sections) plus notes pages (System Design, Frontend System Design, API Design, AI Workflow).
 - Tech stack: React 19 + Vite + TypeScript, Framer Motion, CSS Modules
 
-## Common Commands
-
-```bash
-# Install dependencies
-npm install
-
-# Run locally
-npm run dev
-
-# Run tests
-npm test
-
-# Build
-npm run build
-
-# Lint / format
-npm run lint
-```
-
 ## Directory Structure
 
 ```
@@ -75,4 +56,3 @@ scripts/shot.py  visual check: `python scripts/shot.py <url> <section-id>` scree
 ## Notes / Restrictions
 
 - This is a small personal site — avoid over-engineering (no unnecessary state management libraries, routing frameworks, etc. unless the site grows to need them).
-- Never force-push without explicit confirmation.
