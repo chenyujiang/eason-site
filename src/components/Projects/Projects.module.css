@@ -12,8 +12,11 @@
 
 .card {
   composes: sheet from global;
-  display: flex;
-  flex-direction: column;
+  /* Subgrid lines each card's rows up with its neighbour, so the stack rule and links align */
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+  align-content: start;
   gap: var(--space-2);
   padding: var(--space-4);
 }
@@ -57,13 +60,19 @@
 }
 
 .stack {
-  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5em;
+  align-self: start;
   padding-top: var(--space-2);
   border-top: 1px solid var(--rule);
   font-family: var(--font-mono);
   font-size: var(--step-caption);
   color: var(--ink-soft);
-  text-wrap: balance;
+}
+
+.tech {
+  white-space: nowrap;
 }
 
 .links {
