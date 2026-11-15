@@ -1,0 +1,82 @@
+.grid {
+  list-style: none;
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card {
+  composes: sheet from global;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+}
+
+.when {
+  font-family: var(--font-mono);
+  font-size: var(--step-small);
+  font-weight: 500;
+  color: var(--cobalt);
+}
+
+.name {
+  font-size: var(--step-h3);
+}
+
+.summary {
+  font-size: var(--step-small);
+  color: var(--ink-soft);
+}
+
+/* Highlights drawn as the same small block diagram as the platform modules */
+.highlights {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin-block: var(--space-2);
+  padding: 8px;
+  border: 1px dashed var(--rule-strong);
+  border-radius: var(--radius-sm);
+  background: var(--cobalt-tint);
+}
+
+.highlights li {
+  padding: 0.35rem 0.5rem;
+  background: var(--sheet);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius-sm);
+  font-size: var(--step-caption);
+  line-height: 1.35;
+}
+
+.stack {
+  margin-top: auto;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: var(--step-caption);
+  color: var(--ink-soft);
+  text-wrap: balance;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--step-small);
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-min);
+  color: var(--cobalt);
+}

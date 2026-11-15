@@ -2,7 +2,7 @@
 
 Eason Chen's personal site, styled as a light "annotated drafting sheet". It has three pages:
 
-- **Profile** (`#/`): built from his resume. Hero, the three platforms he built from the ground up, experience, skills, certifications and education, and contact details.
+- **Profile** (`#/`): built from his resume. Hero, the three platforms he built from the ground up, side projects, experience, skills, certifications and education, and contact details.
 - **System Design** (`#/system-design`): scaling a system from one server to millions of users. A sticky architecture diagram adds components as you scroll through each step.
 - **Frontend System Design** (`#/frontend-system-design`): why frontend architecture matters and its core principles: rendering, state, data, performance, scale, reliability.
 - **API Design** (`#/api-design`): designing APIs as contracts: REST resources, pagination, idempotency, errors, versioning, GraphQL, authentication, authorisation, and security.

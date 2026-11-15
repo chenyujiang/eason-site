@@ -35,7 +35,7 @@ src/pages/       one file per route: HomePage (profile), SystemDesignPage,
 src/components/  one folder per component, each with a .tsx and a co-located
                  .module.css. Notes/ holds the shared notes layout + block renderer;
                  ScaleDiagram/ is the step-by-step architecture SVG
-src/data/        typed content — resume facts (profile, platforms, experience,
+src/data/        typed content — resume facts (profile, platforms, projects, experience,
                  skills, credentials) and notes content (systemDesign,
                  frontendDesign, apiDesign, aiWorkflow, using the Block model in notes.ts). Content lives
                  here, not in components
