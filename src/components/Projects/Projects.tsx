@@ -32,7 +32,14 @@ export function Projects({ reducedMotion }: ProjectsProps) {
                 <li key={highlight}>{highlight}</li>
               ))}
             </ul>
-            <p className={styles.stack}>{project.stack}</p>
+            <p className={styles.stack}>
+              {project.stack.split(' · ').map((tech, j, all) => (
+                // Keep each separator on the end of the previous item so a wrap never starts with one
+                <span key={tech} className={styles.tech}>
+                  {j < all.length - 1 ? `${tech} ·` : tech}
+                </span>
+              ))}
+            </p>
             <p className={styles.links}>
               {project.links.map((link) => (
                 <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
