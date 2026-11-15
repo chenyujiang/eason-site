@@ -2,6 +2,7 @@ import { useScrollToSection } from '../hooks/useScrollToSection'
 import { HomeNav } from '../components/HomeNav/HomeNav'
 import { Hero } from '../components/Hero/Hero'
 import { Platforms } from '../components/Platforms/Platforms'
+import { Projects } from '../components/Projects/Projects'
 import { Experience } from '../components/Experience/Experience'
 import { Skills } from '../components/Skills/Skills'
 import { Credentials } from '../components/Credentials/Credentials'
@@ -11,6 +12,7 @@ import styles from './HomePage.module.css'
 const NAV_ITEMS = [
   { id: 'about', label: 'About' },
   { id: 'platforms', label: 'Platforms' },
+  { id: 'projects', label: 'Projects' },
   { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Skills' },
   { id: 'credentials', label: 'Credentials' },
@@ -30,6 +32,7 @@ export function HomePage({ section, reducedMotion }: HomePageProps) {
       <HomeNav items={NAV_ITEMS} />
       <Hero reducedMotion={reducedMotion} />
       <Platforms reducedMotion={reducedMotion} />
+      <Projects reducedMotion={reducedMotion} />
       <Experience />
       <Skills />
       <Credentials />
