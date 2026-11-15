@@ -43,6 +43,9 @@ src/hooks/       useReducedMotion, useHashRoute, useActiveSection, useScrollToSe
 src/routes.ts    route table + hrefFor() link builder
 src/styles/      tokens.css (design tokens as CSS custom properties) + global.css
 public/          static assets served as-is
+scripts/shot.py  visual check: `python scripts/shot.py <url> <section-id>` screenshots
+                 one section at desktop + mobile width and prints overflow/tap-target/
+                 console-error checks (Playwright + local Chrome)
 ```
 
 ## Code Style
